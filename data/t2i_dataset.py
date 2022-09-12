@@ -203,7 +203,7 @@ class T2IDataset(torch.utils.data.IterableDataset):
         if image is None:
             patch_image = None
         else:
-            image_array = Image.open(BytesIO(base64.urlsafe_b64decode(image)))
+            image_array = Image.open(BytesIO(base64.urlsafe_b64decode(image[1:])))
             patch_image = self.patch_transform(image_array)
 
         text_item = self.encode_text(' {}'.format(caption), length=self.max_src_length)

@@ -1,7 +1,7 @@
 TOTAL_NUM_UPDATES=45000
 WARMUP_UPDATES=2700
 LR=1e-04
-BATCH_SIZE=4
+BATCH_SIZE=48
 UPDATE_FREQ=2
 ARCH=t2i_baseline_base
 DICT_FILE=../utils/cn_tokenizer/dict.txt
